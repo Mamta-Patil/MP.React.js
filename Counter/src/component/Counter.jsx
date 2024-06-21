@@ -3,7 +3,6 @@ export default function Counter() {
   const [num, setnum] = useState(0);
  
   function Primenum() {
-    // let number = { num };
     let factor = 0;
 
     for (let i = 0; i <=num; i++) {
@@ -13,10 +12,8 @@ export default function Counter() {
      
     }
     if (factor == 2) {
-     console.log("Prime")
      return true
     } else {
-      console.log("Not Prime Number")
       return false
     }
   }
@@ -32,7 +29,7 @@ export default function Counter() {
       <button onClick={() => setnum(0)}>Reset</button>
 
       <p style={{fontSize:"20px",color:"#fff"}}>Count: {num}</p>
-      <p style={{fontSize:"20px",color:"#fff"}}>This Number is : {num % 2 == 0 ? "Even" : "Old"}</p>
+      <p style={{fontSize:"20px",color:"#fff"}}>This Number is : {num % 2 == 0 ? "Even" : "Odd"}</p>
       <p  style={{fontSize:"20px",color:"#fff"}}>Prime Number : {Primenum() ? "True" : "False"}</p>
     </div>
   );

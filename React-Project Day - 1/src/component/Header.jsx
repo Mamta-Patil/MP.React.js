@@ -11,7 +11,7 @@ export default function Header() {
       </div>
       <div className="nav-content">
         <ul>
-          <li>
+          <li> 
             <a href="" className="home">
               Home
             </a>
