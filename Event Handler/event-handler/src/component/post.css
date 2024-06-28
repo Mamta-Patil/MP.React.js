@@ -1,0 +1,11 @@
+h1,h3{
+    margin: 0px;
+}
+button
+{
+    height: 50px;
+    width: 100px;
+    border: 1px solid cyan;
+    border-radius: 10px;
+    background-color: cyan;
+}
