@@ -1,14 +1,14 @@
 import { useState } from "react";
-const initital = {
+const data = {
   name: "",
   email: "",
-  pass: "",
+  password: "",
   zender: "",
-  level: "",
+  city: "",
 };
 function studentorm(e) {
-  const [formdata, setformdata] = useState(initital);
-  const { name, email, pass, zender, level } = formdata;
+  const [formdata, setformdata] = useState(data);
+  const { name, email, password, zender, city } = formdata;
 
   function handlechange(e) {
     e.preventDefault();
@@ -52,16 +52,17 @@ function studentorm(e) {
         <input
           className="input"
           type="password"
-          name="pass"
-          value={pass}
+          name="password"
+          value={password}
           placeholder="Enter Your Password"
           onChange={handlechange}
         />
         <br />
-        <select value={{ level }} onChange={handlechange} name="level">
-          <option value="fresheman">Fresherman</option>
-          <option value="junior">Junior</option>
-          <option value="senior">Senior</option>
+        <select value={ city}  onChange={handlechange} name="city">
+        <option value="city">City</option>
+          <option value="Surat">Surat</option>
+          <option value="Ahmedabad">Ahmedabad</option>
+          <option value="Rajkot">Rajkot</option>
         </select>
         <br />
         <label> Male</label>

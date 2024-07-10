@@ -1,0 +1,17 @@
+.iocns
+{
+padding-top: 2%;
+}
+.iocns span {
+  font-size: 25px;
+  padding-left: 10px;
+  color: gray;
+}
+.btn1
+{
+  border-radius: 25px;
+  color:#fff;
+  padding: 5px 15px;
+  background-color: rgb(10, 112, 229);
+}
+
