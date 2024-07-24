@@ -33,7 +33,7 @@ const Addproduct = () => {
       });
   };
   return (
-    <div>
+    <div className='form'>
       <h4>Add Product</h4>
       <form onSubmit={(e) => handlesubmit(e)}>
         <input
@@ -43,7 +43,7 @@ const Addproduct = () => {
           onChange={(e) => handlechange(e)}
           placeholder="Image"
         />
-        <br />
+        <br /><br />
         <input
           type="text"
           name="title"
@@ -51,7 +51,7 @@ const Addproduct = () => {
           onChange={(e) => handlechange(e)}
           placeholder="Title"
         />
-        <br />
+        <br /><br />
         <select
           name="category"
           value={category}
@@ -63,7 +63,7 @@ const Addproduct = () => {
           <option value={"women's clothing"}>women's clothing</option>
           <option value={"electronics"}>electronics</option>
         </select>{" "}
-        <br />
+        <br /><br />
         <input
           type="text"
           name="price"
@@ -71,7 +71,7 @@ const Addproduct = () => {
           onChange={(e) => handlechange(e)}
           placeholder="price"
         />
-        <br />
+        <br /><br />
         <input
           type="text"
           name="description"
@@ -79,7 +79,7 @@ const Addproduct = () => {
           onChange={(e) => handlechange(e)}
           placeholder="description"
         />
-        <br />
+        <br /><br />
         <input type="submit" />
       </form>
     </div>

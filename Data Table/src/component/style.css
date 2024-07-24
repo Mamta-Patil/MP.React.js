@@ -1,3 +1,11 @@
+*
+{
+    text-decoration:none;
+}
+a
+{
+    color: black;
+}
 input
 {
     height: 40px;
@@ -8,9 +16,17 @@ input
 .form
 {
     padding:40px 20px;
-    margin: 100px 450px;
-    background-color: black;
+    margin: 40px 450px;
+    background-color: #508C9B;
     color: white;
     text-align: center;
     border-radius: 20px;
+}
+button
+{
+    padding: 10px 40px;
+    background-color: #fff;
+    border: 1px solid #508C9B;
+    border-radius: 25px;
+    /* color: #fff; */
 }

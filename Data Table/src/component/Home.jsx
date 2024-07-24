@@ -1,9 +1,10 @@
 import React from 'react'
-
+import HomeImage from '../assets/image.png'
 const Home = () => {
   return (
     <div className='home'>
-      <h4>Home Page</h4>
+    <br />
+      <img src={HomeImage} style={{height:"80vh",width:"100%"}}></img>
     </div>
   )
 }

@@ -4,7 +4,6 @@ import { useParams } from "react-router-dom";
 
 const Edit = () => {
   const { id } = useParams();
-  //   console.log(id);
   const [formdata, setformdata] = useState({
     title: "",
     description: "",
@@ -55,7 +54,7 @@ const Edit = () => {
             placeholder="Image"
             name="image"
             value={image}
-            onClick={(e) => handlechange(e)}
+            onChange={(e) => handlechange(e)}
           />{" "}
           <br />
           <input
@@ -63,13 +62,13 @@ const Edit = () => {
             placeholder="title"
             name="title"
             value={title}
-            onClick={(e) => handlechange(e)}
+            onChange={(e) => handlechange(e)}
           />{" "}
           <br />
           <select
             name="category"
             value={category}
-            onClick={(e) => handlechange(e)}
+            onChange={(e) => handlechange(e)}
           >
             <option value={""}>select Your Category</option>
             <option value={"men's clothing"}>men's clothing</option>
@@ -82,7 +81,7 @@ const Edit = () => {
             placeholder="Price"
             name="price"
             value={price}
-            onClick={(e) => handlechange(e)}
+            onChange={(e) => handlechange(e)}
           />{" "}
           <br />
           <input
@@ -90,7 +89,7 @@ const Edit = () => {
             placeholder="description"
             name="description"
             value={description}
-            onClick={(e) => handlechange(e)}
+            onChange={(e) => handlechange(e)}
           />{" "}
           <br />
           <input type="submit" />
