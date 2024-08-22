@@ -20,8 +20,7 @@ const Logout=()=>{
     <NavLink to='/' className="nav-link">Home</NavLink>
     <NavLink to='dashboard' className="nav-link">Dashboard</NavLink>
     <NavLink to='login' className="nav-link" >Login</NavLink>
-    <button onClick={Logout}>Logout</button>
-    
+    <button onClick={Logout}>Logout</button>    
     </div>
   )
 }

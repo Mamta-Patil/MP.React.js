@@ -34,7 +34,6 @@ console.log(error)
 }
   return (
     <div>
-      {/* <h6>Product from here</h6> */}
 <form onSubmit={(e)=>handlesubmit(e)}>
 <input name='image' type='text' value={image} placeholder='image' onChange={(e)=>handlechange(e)} /><br /><br />
 <input name='title' type='text' value={title} placeholder='title' onChange={(e)=>handlechange(e)} /><br /><br />
@@ -47,10 +46,9 @@ console.log(error)
 </select><br /><br />
 <input name='price' value={price} type='text' placeholder='price' onChange={(e)=>handlechange(e)} /><br /><br />
 <input name='description' value={description} type='text' placeholder='description' onChange={(e)=>handlechange(e)} /><br /><br />
-<button>Submit</button>
+<button type='submit'>Submit</button>
 </form>    
 </div>
   )
 }
 
-// export default AddProducts

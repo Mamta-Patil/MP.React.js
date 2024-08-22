@@ -8,7 +8,6 @@ export const AllRoutes = () => {
   return (
     <div>
       <Routes>
-        {/* <Route path='/' element={<HomePage />}></Route> */}
         <Route path='/' element={<HomePage />}></Route>       
         <Route path='/product' element={<ProductPage />}></Route>
         <Route path='/addproduct' element={<AddProducts />}></Route>
