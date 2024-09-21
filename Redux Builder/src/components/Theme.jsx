@@ -5,28 +5,27 @@ import { MdOutlineWbSunny } from "react-icons/md";
 import { FaRegMoon } from "react-icons/fa";
 
 const Theme = () => {
-const dispatch=useDispatch()
-const theme = useSelector((state) => state.Themereducer.theme);
-const Theme ={
-    backgroundColor:theme === 'light' ? 'white' : 'black',
-    color: theme === 'light' ? 'black' : 'white'
-}
-const light = {
-  color:"black",
-  // marginTop:"30px",
-  borderRadius:"50px",
-  border:"none",
-  backgroundColor: theme === 'light' ? 'white' : 'black',
-}
-const Dark = {
-    color:"black",
-   borderRadius:"50px",
-   border:"none",
-}
+  const dispatch = useDispatch()
+  const theme = useSelector((state) => state.Themereducer.theme);
+  const Theme = {
+    backgroundColor: theme === 'light' ? 'white' : 'black',
+    color: theme === 'light' ? 'black' : 'white',
+    paddingTop: "100px",
+    marginTop: "10%",
+    display: "flex",
+    paddingLeft: "42%"
+  }
+ 
   return (
     <div style={Theme}>
-      <button disabled={theme=='light'} onClick={()=>dispatch(handleTheme('light'))} style={light} > <MdOutlineWbSunny /></button>
-      <button  disabled={theme=='Dark'} onClick={()=>dispatch(handleTheme('dark'))} style={Dark} > <FaRegMoon /></button>
+      <div style={{textAlign:"center"}}>
+        <p>Light Theme</p>
+        <MdOutlineWbSunny disabled={theme == 'light'} onClick={() => dispatch(handleTheme('light'))} style={{ fontSize: "20px" }} />
+      </div>
+      <div style={{ paddingLeft: "20px" }}>
+        <p>Dark Theme</p>
+        <FaRegMoon disabled={theme == 'dark'} onClick={() => dispatch(handleTheme('dark'))} style={{ marginLeft: "10px", fontSize: "20px" }} />
+      </div>
     </div>
   )
 }

@@ -9,10 +9,12 @@ import Theme from './components/Theme'
 
 function App() {
   return (
-    <Provider store={store}>
+<div>
+<Provider store={store} >
       <Theme />
      <Counter />
     </Provider>
+</div>
   )
 }
 

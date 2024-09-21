@@ -5,7 +5,7 @@ const CounterValue = () => {
     const CounterValue=useSelector((state)=>state.Counterreducer.value)
  
   return (
-    <div>
+    <div style={{padding:"5px"}}>
         {CounterValue}
     </div>
   )
